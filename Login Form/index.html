@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>To - Do List</h1>
+    <p class="item one">Buy Groceries</p>
+    <p class="item two" >Go to the Gym</p>
+    <button class="item three" onclick="line()">Wake up at 07:00 AM</button>
+  </div>
+  <div class="form">
+      <form class="add" id="tasks">
+        <button id="btn" onclick="addTask()">+</button>
+        <input type="text" class="hidden" id="input">
+        <input type="submit" value="submit" class="hidden" id="what">
+      </form>
+  </div>
+    
+  <!-- <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" disabled>
+    <input type="submit" value="Login">
+  </form> -->
+  <script src="script.js"></script>
+</body>
+</html>
