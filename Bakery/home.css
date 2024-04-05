@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Aladin&family=Bonheur+Royale&family=Arya:wght@400;700&display=swap');
 
 :root {
-    --main-color: #ff618e;
     /* --primary-color: #5b00c4; */
     /* --main-color: #ff9187; */
-    --primary-color: #640082;
-    --bg-color: #ffe5ed;
+    --main-color: #f87249;
+    --primary-color: #209bac;
+    --bg-color: #fff6f3;
     --main-font: 'Aladin';
     --secondary-font: 'Arizonia';
     --primary-font: 'Arya';
