@@ -1,0 +1,255 @@
+/* header section */
+
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 12vh;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Bonheur Royale';
+    cursor: pointer;
+}
+
+.header .navbar a {
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 2rem;
+    padding: 0.5rem 2rem;
+    font-family: var(--main-font);
+}
+
+.header .navbar a:hover {
+    border-bottom: 0.5rem solid var(--primary-color);
+}
+
+.underline {
+    border-bottom: 0.5rem solid var(--primary-color);
+}
+
+.header .icons {
+    display: flex;
+}
+
+.header .icons .link {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 3rem;
+    background: none;
+    border: none;
+}
+
+.header .icons .link:hover {
+    color: var(--primary-color);
+}
+
+.header .icons .menu {
+    display: none;
+}
+
+/* Search Bar */
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.6s ease
+}
+
+.header .search-bar.active {
+    right: 7%;
+}
+
+.header .search-bar input {
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem 1.4rem;
+    font-size: 1.6rem;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--primary-font);
+}
+
+.header .search-bar label {
+    font-size: 2.7rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.header .search-bar label:hover {
+    color: var(--main-color)
+}
+
+/* footer section */
+
+
+.footer {
+    padding: 6%;
+    border-top: 1px solid var(--primary-color);
+    margin: auto;
+    background-color: var(--primary-color);
+    padding-bottom: 1%;
+}
+
+.footer a {
+    font-size: 6rem;
+    color: #fff;
+    font-family: var(--secondary-font);
+}
+
+.footer a:hover {
+    color: var(--main-color);
+}
+
+.footer .C {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+}
+
+.footer .area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.area div ul li {
+   list-style: none;
+}
+
+.area div ul li a {
+    font-size: 1.9rem;
+    font-family: var(--primary-font);
+    color: #fff;
+}
+
+.area div ul li a:hover {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.social {
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+.social i {
+    margin: 2rem 3rem;
+    margin-left: 0;
+    /* border: 2px solid black; */
+}
+
+.R {
+    width: 40%;
+    color: #fff;
+}
+
+.R h3 {
+    font-size: 2.4rem;
+    font-family: var(--primary-font);
+}
+
+.R p {
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+}
+
+.R .news {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.R input {
+    font-size: 1.6rem;
+    padding: 0.7rem 0.8em;
+    width: 350px;
+    font-family: var(--primary-font);
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.R button {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    border: 1px solid #fff;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    margin-left: -0.3rem;
+    border-left: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    /* width: 60%; */
+    justify-content: space-between;
+}
+
+.links p {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+    color: #fff;
+    padding-right: 5rem;
+    border-right: 0.1rem solid var(--main-color);
+    cursor: pointer;
+}
+
+.links p:hover {
+    color: var(--main-color);
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 1rem;
+    padding-top: 4rem;
+}
+
+.credits span {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 0.4rem;
+}
+
+.credits p {
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.credits p i {
+    margin: 0 1rem;
+}

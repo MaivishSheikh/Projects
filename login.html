@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55288c3cf7.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login | Bread House</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Bread House</h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Bakopedia</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <button onclick="mySearch()" title="search" class="search link"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="login.html" title="login" class="select"><i class="fa-solid fa-user"></i></a>
+            <div class="menu link"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="search-bar" id="bar">
+            <input type="search" name="search" id="searchBox" placeholder="search...">
+            <label for="searchBox" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+    </header>
+    <section class="login">
+        <h3 class="title">Login</h3>
+    </section>
+    <section class="log">
+        <div class="wrapper">
+            <form action="">
+                <h3>Login</h3>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forget">
+                    <div class="rem">
+                        <input type ="checkbox" id="cb">
+                    <label for="cb">Remember Me</label>
+                    </div>
+                    <div class="for">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <button class="button">Login</button>
+                <div class="register-now">
+                    <p>Don't have an account?</p>
+                    <a href="#">Register here</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <a href="home.html">Bread House</a>
+        <div class="C">
+            <div class="L">
+                <div class="area">
+                    <div>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="blog.html">Bakopedia</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="R">
+                <h3>Let's Stay Connected</h3>
+                <p>Enter your email to get instant 10% off on first purchase.</p>
+                <div class="news">
+                    <form action="">
+                        <input type="text" id="email" placeholder="Email..." required>
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Refund Policy</p>
+            <p>Shipping Policy</p>
+            <p>Customer Reviews</p>
+            <p>Returns</p>
+        </div>
+        <div class="credits">
+            <p>Made By <i class='fas fa-heart'></i> Maivish Sheikh & Aisha Siddiqui</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

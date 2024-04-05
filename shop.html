@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55288c3cf7.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Shop | Bread House</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Bread House</h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html" class="underline">Shop</a>
+            <a href="blog.html">Bakopedia</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <button onclick="mySearch()" title="search" class="search link"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="login.html" title="login" class="login link"><i class="fa-solid fa-user"></i></a>
+            <div class="menu link"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="search-bar" id="bar">
+            <input type="search" name="search" id="searchBox" placeholder="search...">
+            <label for="searchBox" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+    </header>
+    <section class="shop" id="shop">
+        <h2 class="title">Products</h2>
+    </section>
+    <section class="shoparea">
+        <div class="desc">
+            <div class="left">
+                <p>Found 18 out of 30</p>
+            </div>
+            <div class="right">
+                <div class="sort">
+                <span>Sort By: </span>
+                <form action="">
+                    <select name="" id="">
+                        <option value="">Default</option>
+                        <option value="">New</option>
+                        <option value="">Popularity</option>
+                        <option value="">Price</option>
+                        <option value="">High to Low</option>
+                    </select>
+                </form>
+            </div>
+            <div class="disp">
+                <button><i class='bx bxs-grid'></i></i></button>
+                <button><i class='bx bx-list-ul' id="choosen"></i></button>
+            </div>
+            </div>
+            
+        </div>
+        <div class="center" id="cen">
+            <div class="image">
+                <img src="media/donutBG.png" alt="">
+            </div>
+            <div class="content">
+                <a href="">Classic Donut</a>
+                <p class="price">$14.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img src="media/cake1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Chocolate Cake</a>
+                <p class="price">$26.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/bread.png" alt="">
+            </div>
+            <div class="content">
+                <a href="">Bread</a>
+                <p class="price">$34.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img src="media/cheesecake2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Cheese Cake</a>
+                <p class="price">$45.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img src="media/macroons1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Macarons</a>
+                <p class="price">$12.99</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img src="media/brownes.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Brownies</a>
+                <p class="price">$28.99</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/cookieBG.png" alt="">
+            </div>
+            <div class="content">
+                <a href="">Chocolate Cookies</a>
+                <p class="price">$18.99</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/berryMac.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Donuts</a>
+                <p class="price">$26.99</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/cake3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Cake</a>
+                <p class="price">$52.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/cake2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Cake</a>
+                <p class="price">$43.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="image">
+                <img class="bg-white" src="media/teaCake.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="">Tea Cake</a>
+                <p class="price">$36.00</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae nemo molestiae dolorum et ipsam doloribus minus nostrum suscipit corporis.</p>
+                <div class="btn">
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <h3>1</h3>
+            <h3>2</h3>
+            <h3>3</h3>
+            <h3>></h3>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="home.html">Bread House</a>
+        <div class="C">
+            <div class="L">
+                <div class="area">
+                    <div>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="blog.html">Bakopedia</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="R">
+                <h3>Let's Stay Connected</h3>
+                <p>Enter your email to get instant 10% off on first purchase.</p>
+                <div class="news">
+                    <form action="">
+                        <input type="text" id="email" placeholder="Email..." required>
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Refund Policy</p>
+            <p>Shipping Policy</p>
+            <p>Customer Reviews</p>
+            <p>Returns</p>
+        </div>
+        <div class="credits">
+            <p>Made By <i class='fas fa-heart'></i> Maivish Sheikh & Aisha Siddiqui</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

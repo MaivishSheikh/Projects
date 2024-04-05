@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Arya:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+:root {
+    --main-color: #ff618e;
+    /* --primary-color: #5b00c4; */
+    /* --main-color: #ff9187; */
+    --primary-color: #640082;
+    --bg-color: #ffe5ed;
+    --main-font: 'Aladin';
+    --secondary-font: 'Arizonia';
+    --primary-font: 'Arya';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: var(--primary-font), 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* blog area */
+
+.recipe {
+    margin-top: 5.75%;
+    width: 100%;
+    height: 60vh;
+    color: var(--primary-color);
+    background: #ffc0cb;
+    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+}
+
+.title {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: end;
+    font-family: var(--secondary-font);
+}
+
+.bake {
+    padding: 5% 2%;
+}
+
+.bake .catalouge {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.bake .catalouge .cards {
+    position: relative;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 4px 5px 3px 3px #6a6a6a4e, -0.4px -0.1px 3px 3px rgba(95, 95, 95, 0.306);    
+}
+
+.bake .arrow {
+    position: absolute;
+    top: 18rem;
+    right: 3rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    font-size: 2.2rem;
+    padding: 1.1rem 1.3rem;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    transition: 0.5s ease;
+}
+
+.bake .arrow:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.bake .des {
+    display: block;
+    font-size: 2.9rem;
+    text-align: center;
+    font-family: var(--main-font);
+    margin: 4rem 0 1rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.bake .des:hover {
+    color: var(--main-color);
+}
+
+.bake .catalouge .cards .text {
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    width: 22rem;
+    text-align: center;
+    margin: auto;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bake .catalouge .cards img {
+    width: 38rem;
+    height: 20rem;
+    border-radius: 0.7rem;
+}
