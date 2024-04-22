@@ -12,11 +12,7 @@
     right: 0;
     z-index: 1000;
     height: 12vh;
-}
-
-.header .logo {
-    display: flex;
-    align-items: center;
+    width: 100vw;
 }
 
 .header .logo h1 {
@@ -24,6 +20,10 @@
     color: #fff;
     font-family: 'Bonheur Royale';
     cursor: pointer;
+}
+
+.header .navbar {
+    margin-left: 2rem;
 }
 
 .header .navbar a {
@@ -252,4 +252,42 @@
 
 .credits p i {
     margin: 0 1rem;
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding: 1rem 3%;
+    }
+    .header .logo h1 {
+        font-size: 3.4rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .header .icons .link {
+        font-size: 1.2rem;
+        margin: 0 1.6rem;
+    }
+    .header .icons .search {
+        margin: 0;
+    }
+    .menu {
+        display: block;
+    }
+    .header .search-bar {
+        right: -150%;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 0.8rem;
+    }
+    .header .search-bar.active {
+        right: 6%;
+    }
+    .header .search-bar input {
+        padding: 0.1rem 1rem;
+        font-size: 1.2rem;
+    }
+    .header .search-bar label {
+        font-size: 1.3rem;
+    }
 }

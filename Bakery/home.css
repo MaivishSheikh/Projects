@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Aladin&family=Bonheur+Royale&family=Arya:wght@400;700&display=swap');
 
 :root {
-    /* --primary-color: #5b00c4; */
-    /* --main-color: #ff9187; */
-    --main-color: #f87249;
-    --primary-color: #209bac;
+    --main-color: #1ea17a;
+    --primary-color: #5c0032;
     --bg-color: #fff6f3;
     --main-font: 'Aladin';
     --secondary-font: 'Arizonia';
@@ -33,13 +31,12 @@ body {
 /* home section */
 
 .home {
-    margin-top: 5.75%;
+    margin-top: 5.65%;
     width: 100%;
     height: 90vh;
     color: var(--primary-color);
     background: pink;
     background-image: url('media/oh.jpeg');
-    /* background-image: url('media/bg\ \(4\).jpeg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
