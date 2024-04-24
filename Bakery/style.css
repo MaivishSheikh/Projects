@@ -1,3 +1,12 @@
+:root {
+    --main-color: #1ea17a;
+    --primary-color: #5c0032;
+    --bg-color: #fff6f3;
+    --main-font: 'Aladin';
+    --secondary-font: 'Arizonia';
+    --primary-font: 'Arya';
+}
+
 /* header section */
 
 .header {
@@ -36,6 +45,10 @@
 
 .header .navbar a:hover {
     border-bottom: 0.5rem solid var(--primary-color);
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .underline {
@@ -164,7 +177,6 @@
 .social i {
     margin: 2rem 3rem;
     margin-left: 0;
-    /* border: 2px solid black; */
 }
 
 .R {
@@ -212,7 +224,6 @@
 .links {
     display: flex;
     align-items: center;
-    /* width: 60%; */
     justify-content: space-between;
 }
 
@@ -233,8 +244,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0 1rem;
-    padding-top: 4rem;
+    margin: 3rem 0 1rem;
+    padding-top: 2rem;
 }
 
 .credits span {
@@ -253,15 +264,15 @@
 .credits p i {
     margin: 0 1rem;
 }
-
 @media (max-width: 425px) {
     .header {
         padding: 1rem 3%;
+        width: 100vw;
     }
     .header .logo h1 {
         font-size: 3.4rem;
     }
-    .navbar {
+    .navbar a{
         display: none;
     }
     .header .icons .link {
@@ -270,9 +281,6 @@
     }
     .header .icons .search {
         margin: 0;
-    }
-    .menu {
-        display: block;
     }
     .header .search-bar {
         right: -150%;
@@ -289,5 +297,61 @@
     }
     .header .search-bar label {
         font-size: 1.3rem;
+    }
+    .footer {
+        padding: 3% 5% 1%;
+    }
+    .footer a {
+        font-size: 4rem;
+    }
+    .area div ul li a {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    .social {
+        font-size: 1.4rem;
+    }
+    .social i {
+        margin: 1rem 1.5rem;
+        margin-left: 0;
+    }
+    .R h3 {
+        font-size: 1.6rem;
+    }
+    .R p {
+        font-size: 1rem;
+    }
+    .R input {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.8em;
+        width: 10rem;
+    }
+    .R button {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.8em;
+    }
+    .footer .C {
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+    }
+    .links p {
+        font-size: 0.8rem;
+        font-family: var(--primary-font);
+        color: #fff;
+        padding: 0 1rem;
+        border-right: 0.1rem solid var(--main-color);
+        cursor: pointer;
+    }
+    .credits {
+        margin: 1rem 0 0.1rem;
+        padding-top: 1rem;
+    }
+    
+    .credits span {
+        font-size: 1rem;
+    }
+    
+    .credits p {
+        font-size: 0.9rem;
     }
 }

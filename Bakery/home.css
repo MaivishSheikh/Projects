@@ -32,7 +32,7 @@ body {
 
 .home {
     margin-top: 5.65%;
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     color: var(--primary-color);
     background: pink;
