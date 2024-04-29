@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html {
+            font-size: 62.5%;
+        }
         .container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 20rem 20rem 20rem;
+            gap: 1rem 3rem;
+            padding: 5%;
         }
         .box {
-            width: 100px;
-            height: 100px;
+            width: 20rem;
+            height: 20rem;
             border: 2px solid black;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+        @media (max-width: 725px) {
+            .container {
+                grid-template-columns: 15rem 15rem;
+            }
+            .box {
+                width: 15rem;
+                height: 15rem;
+            }
+        }
+        @media (max-width: 425px) {
+            .container {
+                grid-template-columns: 10rem;
+            }
+            .box {
+                width: 10rem;
+                height: 10rem;
+            }
         }
     </style>
 </head>
