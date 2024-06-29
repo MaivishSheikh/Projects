@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Preahvihear&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Reggae+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.homie {
+    background-color: pink;
+    width: 100%;
+    background-image: url(photos/bg10.jpeg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    /* margin-top: 7rem; */
+}
+
+.hero {
+    padding: 10rem;
+}
+
+.hero h2 {
+    width: 40%;
+    font-size: 5rem;
+    font-family: 'Germania One';
+}
+
+.hero p {
+    width: 40%;
+    font-size: 1.5rem;
+    font-family: 'Preahvihear';
+    margin: 3rem 0;
+    font-weight: bold;
+}
+
+.hero a {
+    text-decoration: none;
+    background-color: #A10303;
+    color: #fff;
+    font-family: 'Germania One';
+    padding: 1rem 2.5rem;
+    font-size: 2.2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.hero a:hover {
+    background-color: #000;
+}
+
+.items {
+    padding: 5rem 7rem 7rem;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    font-size: 2.5rem;
+    margin: 2rem 0 0;
+    font-family: 'Germania One';
+}
+
+.desc-details {
+    font-size: 4rem;
+    margin: 0 0 3rem;
+    font-family: 'Germania One';
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.specials {
+    border-right: 0.3rem solid #000;
+}
+
+.special {
+    padding: 1.5rem 3rem;
+    width: 30rem;
+    font-size: 2.2rem;
+    font-family: 'Pirata One';
+    cursor: pointer;
+    text-align: center;
+}
+
+.special:hover {
+    color: #fff;
+    background-color: #A10303;
+}
+
+.contents {
+    padding: 0 2rem;
+    width: 80%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1.5rem 0;
+}
+
+.content h3 {
+    width: 70%;
+    font-size: 2rem;
+    font-family: 'Reggae One';
+}
+
+.content p {
+    width: 65%;
+    font-size: 1.3rem;
+    font-family: 'Preahvihear';
+}
+
+.p1 {
+    margin: 1rem 0;
+}
+
+.content img {
+    width: 33rem;
+    height: 20rem;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    border-radius: 1rem;
+}
+
+.content {
+    display: none;
+}
+
+.special.bgcolor {
+    background-color: #A10303;
+    color: #fff;
+}
+
+.content.visible {
+    display: block;
+}
+
+.aboutie {
+    border-top: 0.3rem solid #A10303;
+    padding: 5rem 10rem 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-details {
+    margin-right: 10rem;
+    text-align: justify;
+}
+
+.aboutie img {
+    width: 60rem;
+    border-radius: 1rem;
+}
+.about-details h3 {
+    font-size: 3.5rem;
+    font-family: 'Pirata One';
+}
+
+.about-details p {
+    font-size: 1.5rem;
+    font-family: 'Preahvihear';
+}
+
+.p2 {
+    margin: 3rem 0 1rem;
+}
+
+.about-details a {
+    text-decoration: none;
+    background-color: #A10303;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Germania One';
+    margin: 3rem 0 0;
+}
+
+@media (max-width: 1440px) {
+    .items {
+        padding: 5rem;
+    }
+    .content h3 {
+        width: 60%;
+    }
+    .content p {
+        width: 60%;
+    }
+    .contents {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero {
+        padding: 9rem 8rem;
+    }
+    .hero h2 {
+        width: 45%;
+    }
+    .hero p {
+        margin: 2rem 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1224px) {
+    .item {
+        display: block;
+        padding: 5rem 8rem;
+    }
+    .specials {
+        border: none;
+    }
+    .special {
+        width: 100%;
+    }
+    .content img {
+        width: 70%;
+        height: 30rem;
+        position: static;
+        margin-left: 13rem;
+    }
+    .contents {
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        position: static;
+    }
+    .content h3 {
+        width: 100%;
+        margin: 2rem 0;
+        
+    }
+    .content p {
+        width: 100%;
+    }
+    
+    .aboutie {
+        flex-direction: column;
+        padding: 5rem 7rem 7rem;
+    }
+    .about-details {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .aboutie img {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .homie {
+        height: 100%;
+    }
+    .hero h2 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content img {
+        height: 30rem;
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .items {
+        padding: 5rem 7rem;
+    }
+    .item {
+        padding: 0;
+    }
+    .content img {
+        width: 80%;
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .hero {
+        text-align: center;
+        padding: 20rem 8rem;
+    }
+    .hero h2 {
+        font-size: 4rem;
+        width: 100%;
+    }
+    .hero p {
+        width: 100%;
+        margin: 5rem 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .content img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .content img {
+        height: 100%;
+    }
+    .items {
+        padding: 5rem;
+    }
+    .aboutie {
+        padding: 5rem 5rem 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        text-align: center;
+        padding: 18rem 3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero h2 {
+        font-size: 3rem;
+    } 
+    .hero p {
+        font-size: 1.3rem;
+        margin: 5rem 0;
+    }
+    .desc-details {
+        font-size: 4rem;
+    }
+    .items {
+        padding: 3rem;
+    }
+    .aboutie {
+        padding: 5rem 3rem 7rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .description {
+        font-size: 2rem;
+    }
+    .desc-details {
+        margin: 0.8rem 0 2rem;
+       font-size: 3rem;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55288c3cf7.js" crossorigin="anonymous"></script>
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h3>Bread House</h3>
+        </div>
+        <nav class="navbar" id="nav">
+            <ul>
+                <li><a href="#home" class="lks line">Home</a></li>
+                <li><a href="#about" class="lks">About</a></li>
+                <li><a href="#shop" class="lks">Shop</a></li>
+                <li><a href="#blog" class="lks">Bakopedia</a></li>
+                <li><a href="#contact" class="lks">Contact</a></li>
+            </ul>
+            <div class="user">
+                <button onclick="window.open('https:/www.youtube.com')"><i class="fa-solid fa-user"></i>Sign Up</button>
+            </div>
+        </nav>
+        <div class="menu">
+            <button onclick="showing()"><i class="fa-solid fa-bars bars" id="bar"></i></button>
+        </div>
+    </header>
+    <section class="homie" id="home">
+        <div class="hero">
+            <h2>Crafted with Passion, Baked with Love</h2>
+            <p>Step into our world of artisanal baking, where passion meets expertise in every recipe we create. From
+                the crackle of our freshly baked bread to the delicate sweetness of our pastries, each bite is a
+                testament to our commitment to quality and craftsmanship.</p>
+            <a href="shop.html" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+    <section class="items">
+        <h3 class="description">Specials</h3>
+        <p class="desc-details">Check Our Specials</p>
+        <div class="item">
+            <div class="specials">
+                <div class="special bgcolor" data-target="special1">Macarons</div>
+                <div class="special" data-target="special2">Ice Cream</div>
+                <div class="special" data-target="special3">CheeseCake</div>
+                <div class="special" data-target="special4">Waffles</div>
+            </div>
+            <div class="contents">
+                <div class="content visible" id="special1">
+                    <img src="photos/macarons.jpg" alt="">
+                    <h3>Macarons are like a little bite of heaven wrapped in a rainbow.</h3>
+                    <p class="p1">Macarons are delightful French pastries that are known for their delicate meringue-like shells and creamy ganache or buttercream fillings. They come in a variety of flavors and colors, often with a smooth, shiny surface and a slightly crisp exterior that gives way to a soft, chewy interior.</p>
+                    <p>They're popular as both a treat and a gift due to their elegant appearance and rich taste. French macarons require precision in baking to achieve the perfect texture and consistency, making them a favorite among pastry enthusiasts and those with a sweet tooth alike!</p>
+                </div>
+                <div class="content" id="special2">
+                    <img src="photos/icecream.jpg" alt="">
+                    <h3>Life is like an ice cream cone. Enjoy it before it melts.</h3>
+                    <p class="p1">Ice cream, with its velvety texture and endless array of flavors, holds a special place in the hearts of dessert enthusiasts everywhere. Whether it's a sweltering summer day or a cozy winter evening, the allure of ice cream knows no bounds.</p>
+                    <p>Imagine indulging in a scoop of rich, creamy vanilla, its smoothness melting on your tongue with each luxurious bite. Or perhaps you prefer the boldness of dark chocolate, its intense cocoa notes mingling perfectly with the cold creaminess.</p>
+                </div>
+                <div class="content" id="special3">
+                    <img src="photos/cheese.webp" alt="">
+                    <h3>Cheesecake: the perfect union of cheese, cake, and happiness.</h3>
+                    <p class="p1">Cheesecake, a beloved dessert worldwide, embodies a perfect harmony of textures and flavors. Its signature creamy, velvety filling, often made from cream cheese, eggs, and sugar, sits atop a base typically composed of crushed cookies or graham crackers mixed with butter.</p>
+                    <p>Cheesecakes can be baked or set by chilling, each method offering distinct characteristics; baked versions often have a denser texture, while no-bake varieties tend to be lighter and silkier.</p>
+                </div>
+                <div class="content" id="special4">
+                    <img src="photos/waffles.jpg" alt="">
+                    <h3>Waffles are just pancakes with abs.</h3>
+                    <p class="p1"> Waffles are a delightful breakfast treat that offer a perfect balance of crispiness on the outside and fluffy softness on the inside. They're made from a batter typically composed of flour, eggs, milk, butter, and leavening agents like baking powder or yeast.</p>
+                    <p>Whether enjoyed plain with a dusting of powdered sugar, adorned with fresh berries and whipped cream, or served alongside savory accompaniments like crispy bacon and eggs, waffles offer a versatile canvas for culinary creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutie" id="about">
+        <div class="about-details">
+            <h3>Bread House: Where every loaf is a labor of love and a taste of tradition.</h3>
+            <p class="p2">Welcome to Bread House, where every loaf tells a tale of tradition, taste, and the timeless artistry of baking. Bread House was born out of a deep-rooted passion for the craft of breadmaking. Our bakery was envisioned as a sanctuary for bread lovers seeking authentic flavors and artisanal expertise.</p>
+            <p>Bread House is more than just a bakery; it's a haven for bread enthusiasts. Renowned for its commitment to quality, Bread House uses only the finest ingredients to craft its artisan loaves. Each product is baked with a blend of tradition and innovation, resulting in a delightful array of flavors and textures. Whether you're savoring a crusty baguette or a soft, fragrant brioche, every bite at Bread House is a testament to their passion for perfection. This bakery not only provides nourishment but also creates a warm, inviting atmosphere that makes every visit a memorable experience.</p>
+            <a href="#about">Read More</a>
+        </div>
+        <img src="photos/bread.jpeg" alt="">
+    </section>
+    <footer class="footer">
+        <section class="qualities">
+            <div class="quality package">
+                <span><i class="fa-solid fa-box-open"></i></span>
+                <p>100% SECURE PACKAGING</p>
+            </div>
+            <div class="quality shippng">
+                <span><i class="fa-solid fa-truck-fast"></i></span>
+                <p>SHIPPING WORLD WIDE</p>
+            </div>
+            <div class="quality support">
+                <span><i class="fa-solid fa-headset"></i></span>
+                <p>OUTSTANDING SUPPORT</p>
+            </section>
+            <section class="footer-details">
+                <div class="logo">
+                    <h3>Bread House</h3>
+                </div>
+                <div class="links">
+                    <div class="link social-media">
+                        <p>Find us in Socail Media</p>
+                        <div class="media">
+                            <div><i class="fa-brands fa-instagram"></i></div>
+                            <div><i class="fa-brands fa-facebook"></i></div>
+                            <div><i class="fa-brands fa-twitter"></i></div>
+                            <div><i class="fa-brands fa-linkedin-in"></i></div>
+                        </div>
+                    </div>
+                    <div class="link community">
+                        <p>COMMUNITY</p>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Community</li>
+                            <li>Ideas</li>
+                            <li>Developers</li>
+                        </ul>
+                    </div>
+                    <div class="link company">
+                        <p>COMPANY</p>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Team</li>
+                            <li>Where to Buy</li>
+                            <li>Resellers</li>
+                            <li>Influencers</li>
+                            <li>Affiliates</li>
+                            <li>Media</li>
+                            <li>Contacts & Imprint</li>
+                        </ul>
+                    </div>
+                    <div class="link useful-links">
+                        <p>USEFUL LINKS</p>
+                        <ul>
+                            <li>Warranty</li>
+                            <li>Product Declarations</li>
+                            <li>Terms of Use</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookie Policy</li>
+                            <li>Cookie Settings</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="credits">
+                <p>Copyright (c) 2024</p>
+                <span><i class="fa-regular fa-copyright"></i></span>
+                <p>Bread House</p>
+            </section>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
