@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55288c3cf7.js" crossorigin="anonymous"></script>
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h3>Bread House</h3>
+        </div>
+        <nav class="navbar" id="nav">
+            <ul>
+                <li><a href="home.html" class="line">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Bakopedia</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="user">
+                <button onclick="window.open('https:/www.youtube.com')"><i class="fa-solid fa-user"></i>Sign Up</button>
+            </div>
+        </nav>
+        <div class="menu">
+            <button onclick="showing()"><i class="fa-solid fa-bars bars" id="bar"></i></button>
+        </div>
+    </header>
+
+    <script>
+        let bar = document.getElementById('bar')
+        let close = document.getElementById('close')
+        let nav = document.getElementById('nav')
+        function showing() {
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
