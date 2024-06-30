@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55288c3cf7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .darkmode {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer {
+            width: 12rem;
+            height: 5rem;
+            border-radius: 10rem;
+            display: flex;
+            position: relative;
+            background-image: url(photos/day.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: 0.5s ease;
+        }
+
+        .inner {
+            width: 4rem;
+            height: 4rem;
+            background-color: skyblue;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            transition: 0.5s ease;
+        }
+        
+        .active {
+            left: 7.5rem;
+            background-color: #1d1d1d;
+        }
+        
+        .black {
+            transition: 0.5s ease;
+            background-color: #1d1d1d;
+        }
+
+        .sun {
+            color: gold;
+            font-size: 2.2rem;
+            padding: 1rem 0.8rem;
+        }
+
+        .moon {
+            color: silver;
+            font-size: 2rem;
+            padding: 1rem 1.2rem;
+        }
+
+        .night {
+            background-image: url(photos/night.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="darkmode" id="dark">
+        <div class="outer" id="outside">
+            <div class="inner" id="inside"><i class="fa-solid fa-sun sun" id="day"></i></div>
+        </div>
+    </div>
+
+    <script>
+        let outer = document.getElementById('outside')
+        let inner = document.getElementById('inside')
+        let dark = document.getElementById('dark')
+        let day = document.getElementById('day')
+        outer.addEventListener('click', () => {
+            inner.classList.toggle('active')
+            dark.classList.toggle('black')
+            day.classList.toggle('fa-moon')
+            day.classList.toggle('fa-sun')
+            day.classList.toggle('sun')
+            day.classList.toggle('moon')
+            outer.classList.toggle('night')
+        })
+    </script>
+</body>
+</html>
