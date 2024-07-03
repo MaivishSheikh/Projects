@@ -1,0 +1,13 @@
+let outer = document.getElementById('outside')
+let inner = document.getElementById('inside')
+let dark = document.getElementById('dark')
+let day = document.getElementById('day')
+outer.addEventListener('click', () => {
+    inner.classList.toggle('active')
+    dark.classList.toggle('black')
+    day.classList.toggle('fa-moon')
+    day.classList.toggle('fa-sun')
+    day.classList.toggle('sun')
+    day.classList.toggle('moon')
+    outer.classList.toggle('night')
+})
