@@ -14,6 +14,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .outer {
@@ -22,7 +23,7 @@ html {
     border-radius: 10rem;
     display: flex;
     position: relative;
-    background-image: url(photos/day.jpg);
+    background-color: #000;
     background-size: cover;
     background-position: center;
     transition: 0.5s ease;
@@ -31,7 +32,7 @@ html {
 .inner {
     width: 4rem;
     height: 4rem;
-    background-color: skyblue;
+    background-color: #00b7ff;
     border-radius: 10rem;
     position: absolute;
     top: 0.5rem;
@@ -41,26 +42,26 @@ html {
 
 .active {
     left: 7.5rem;
-    background-color: #1d1d1d;
+    background-color: #000;
 }
 
 .black {
     transition: 0.5s ease;
-    background-color: #1d1d1d;
+    background-color: #000;
 }
 
 .sun {
-    color: gold;
+    color: #fff;
     font-size: 2.2rem;
     padding: 1rem 0.8rem;
 }
 
 .moon {
-    color: silver;
+    color: #fff;
     font-size: 2rem;
     padding: 1rem 1.2rem;
 }
 
 .night {
-    background-image: url(photos/night.jpg);
+    background-color: #fff;
 }
